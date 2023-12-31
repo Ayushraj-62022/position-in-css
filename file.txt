@@ -1,0 +1,15 @@
+What Is Relative Positioning?
+When you set the position relative to an element, without adding any other positioning attributes (top, bottom, right, left) nothing will happen.
+ When you add an additional position apart from  relative, such as left: 20px the element will move 20px to the right from its normal position.
+  Here, you can see that this element is relative to itself. When the element moves,no other element on the layout will be affected.
+
+  What Is Absolute Positioning?
+Absolute positioning allows you to place your element precisely where you want it.
+
+Absolute positioning is done relative to the first relatively (or absolutely) positioned parent element. In the case when there is no positioned parent element, the element that has position set to absolute will be positioned related directly to the HTML element (the page itself).
+
+An important thing to keep in mind while using absolute positioning is to make sure it is not overused, otherwise, it can lead to a maintenance nightmare.
+
+The next thing, yet again, is to show an example of absolute positioning.
+
+In the example, the parent element has the position set to relative. Now, when you set the position of the child element to absolute, any additional positioning will be done relative to the parent element. The child element moves relatively to the top of the parent element by 100px and right of the parent element by 40px.
